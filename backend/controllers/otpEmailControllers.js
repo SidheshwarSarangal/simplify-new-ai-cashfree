@@ -37,6 +37,7 @@ export const sendOtpEmail = async (email, otp) => {
 // Handle OTP request
 export const requestOtp = async (req, res) => {
     const { email } = req.body;
+    console.log("xxxxxxxxxxxxxxx");
     if (!email) {
         return res.status(400).json({ success: false, error: 'Email is required' });
     }
