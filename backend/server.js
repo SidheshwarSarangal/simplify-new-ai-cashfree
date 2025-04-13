@@ -43,29 +43,3 @@ app.use('/api/gemini/', geminiRoutes);
 app.listen(port, () => {
   console.log(`🚀 Server is running on http://localhost:${port}`);
 });
-/*
-async function listModels() {
-  const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-
-  try {
-    const models = await genAI.listModels();
-    console.log("Available Models:", models);
-  } catch (error) {
-    console.error("Error fetching models:", error);
-  }
-}
-
-listModels();*/
-/*
-import { GoogleGenerativeAI } from "@google/generative-ai";
-const genAI = new GoogleGenerativeAI("AIzaSyCheeeTvNU4L4jNZ53VGpmGNXbRP0VtyAA");
-
-const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
-
-const prompt = "Explain how AI works";
-
-const result = await model.generateContent(prompt);
-console.log(result.response.text());*/
-
-
-//console.log("Loaded API Key:", process.env.AI_API_KEY); // Check if it's loaded
